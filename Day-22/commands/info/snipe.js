@@ -15,7 +15,7 @@ module.exports = {
   }
     
     const msg = client.snipes.get(message.channel.id)
-    if(!msg) return message.channel.send("There are no deleted messages in this channel!")
+    if(!msg) return message.channel.send("tidak ada pesan yang dihapus di channel ini")
     const embed = new Discord.MessageEmbed()
     .setAuthor(msg.author)
     .setDescription(msg.content)
