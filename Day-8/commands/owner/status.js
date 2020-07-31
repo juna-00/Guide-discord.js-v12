@@ -10,11 +10,11 @@ module.exports = {
     
     //OWNER ONLY COMMAND
     if(!message.author.id === "YOUR ID") {
-      return message.channel.send("This command can only be used by owner")
+      return message.channel.send("perintah / command ini hanya dapat digunakan oleh pemilik bot/server")
     }
     //ARGUMENT
     if(!args.length) {
-      return message.channel.send("Please give status message")
+      return message.channel.send("tolong beri pesan status")
     }
     
  db.set(`status`, args.join(" "))
