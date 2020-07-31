@@ -62,7 +62,7 @@ client.on("guildMemberAdd", (member) => {
   .setAuthor(member.user.username, member.user.avatarURL())
   .setColor("#ff2050")
   .setThumbnail(member.user.avatarURL())
-  .setDescription(`We are very happy to have you in our server`);
+  .setDescription(`kami sangat senang memiliki Anda di server kami`);
   
   client.channels.cache.get(chx).send(wembed)
 })
