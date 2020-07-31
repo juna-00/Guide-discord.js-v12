@@ -18,15 +18,15 @@ module.exports = {
       let corona = await track.all() //it will give global cases
       
       let embed = new discord.MessageEmbed()
-      .setTitle("Global Cases")
+      .setTitle("Corona Global")
       .setColor("#ff2050")
-      .setDescription("Sometimes cases number may differ from small amount.")
-      .addField("Total Cases", corona.cases, true)
-      .addField("Total Deaths", corona.deaths, true)
-      .addField("Total Recovered", corona.recovered, true)
-      .addField("Today's Cases", corona.todayCases, true)
-      .addField("Today's Deaths", corona.todayDeaths, true)
-      .addField("Active Cases", corona.active, true);
+      .setDescription("terkadang jumlah kasus mungkin berbeda dari jumlah kecil")
+      .addField("Total Positif", corona.cases, true)
+      .addField("Total Meninggal", corona.deaths, true)
+      .addField("Total Sembuh", corona.recovered, true)
+      .addField("Positif Hari Ini", corona.todayCases, true)
+      .addField("Meninggal Hari Ini", corona.todayDeaths, true)
+      .addField("Positif Aktif", corona.active, true);
       
       return message.channel.send(embed)
       
@@ -38,13 +38,13 @@ module.exports = {
       let embed = new discord.MessageEmbed()
       .setTitle(`${corona.country}`)
       .setColor("#ff2050")
-      .setDescription("Sometimes cases number may differ from small amount.")
-      .addField("Total Cases", corona.cases, true)
-      .addField("Total Deaths", corona.deaths, true)
-      .addField("Total Recovered", corona.recovered, true)
-      .addField("Today's Cases", corona.todayCases, true)
-      .addField("Today's Deaths", corona.todayDeaths, true)
-      .addField("Active Cases", corona.active, true);
+      .setDescription("terkadang jumlah kasus mungkin berbeda dari jumlah kecil")
+      .addField("Total Positif", corona.cases, true)
+      .addField("Total Meninggal", corona.deaths, true)
+      .addField("Total Sembuh", corona.recovered, true)
+      .addField("Positif Hari Ini", corona.todayCases, true)
+      .addField("Meninggal Hari Ini", corona.todayDeaths, true)
+      .addField("Positif Aktif", corona.active, true);
       
       return message.channel.send(embed)
       
