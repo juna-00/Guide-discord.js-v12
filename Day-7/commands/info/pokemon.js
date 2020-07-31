@@ -14,7 +14,7 @@ const options = {
   
 }
 
-message.channel.send("Fetching Informtion for API").then(msg => {
+message.channel.send("mengambil Informasi untuk API").then(msg => {
   get(options).then(body => {
     
     let embed = new MessageEmbed()
