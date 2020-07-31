@@ -13,7 +13,7 @@ name: "anime",
     
     
     if(!args.length) {
-      return message.channel.send("Please Give Anime Name")
+      return message.channel.send("Tolong beri nama anime")
     }
     //DEFINE OPTIONS
     
@@ -29,7 +29,7 @@ name: "anime",
     }
     
     
-    message.channel.send("Fetching The Info").then(msg => {
+    message.channel.send("Mengambil Info").then(msg => {
       get(option).then(body => {
        try {
         let embed = new MessageEmbed()
@@ -48,7 +48,7 @@ name: "anime",
         
        } catch (err) {
         msg.delete();
-         return message.channel.send("Unable to find this anime");
+         return message.channel.send("Tidak menemukan anime ini");
        }
         
         
