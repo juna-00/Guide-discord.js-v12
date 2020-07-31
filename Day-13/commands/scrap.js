@@ -13,11 +13,11 @@ module.exports = {
     
     
     if(!cmd[0]) {
-      return message.channel.send("Please Give anime name")
+      return message.channel.send("tolong beri nama anime")
     }
     
     if(!cmd[1]) {
-      return message.channel.send("Please Give anime episode number")
+      return message.channel.send("tolong beri nomor episode anime")
     }
     
         let msg = await message.channel.send("Hacking website -_-")
