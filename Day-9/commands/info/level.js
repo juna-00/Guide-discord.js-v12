@@ -10,17 +10,17 @@ module.exports = {
     const user = message.mentions.users.first() || message.author;
     
     if(user.id === client.user.id) { //IF BOT
-      return message.channel.send("😉 | I am on level 100")
+      return message.channel.send("😉 | saya di level 100")
     }
     
     if(user.bot) {
-      return message.channel.send("Bot do not have levels")
+      return message.channel.send("bot tidak memiliki level.")
     }
     
     let xp = db.get(`xp_${user.id}_${message.guild.id}`) || 0;
     
     const {level, remxp, levelxp} = getInfo(xp);
-    if(xp === 0) return message.channel.send(`**${user.tag}** is out of the xp`)
+    if(xp === 0) return message.channel.send(`**${user.tag}** keluar dari xp`)
     
     let embed = new discord.MessageEmbed()
     .setAuthor(user.username, message.guild.iconURL())
