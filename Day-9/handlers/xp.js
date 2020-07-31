@@ -34,7 +34,7 @@ class Util {
     
     
     if(newlvl > oldlvl) 
-    message.channel.send(`${message.author}, You just reached level ${newlvl}`)
+    message.channel.send(`Selamat ${message.author} telah naik level  ${newlvl}`)
     db.add(`xp_${message.author.id}_${message.guild.id}`, toadd)
   }
 }
